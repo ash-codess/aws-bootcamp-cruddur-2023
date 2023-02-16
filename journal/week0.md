@@ -1,4 +1,4 @@
-[![banner](/journal/journal-assets/W0-BN.png)](https://www.youtube.com/live/SG8blanhAOg?feature=share)
+[![banner](journal-assets/W0-B.png)](https://www.youtube.com/live/SG8blanhAOg?feature=share)
 
 # Week 0 — Billing and Architecture
 
@@ -16,7 +16,7 @@ Few things i picked from livestream that i wanted to look into more:
 
 - **Iron triangle** - The basic idea is that any project has a fixed amount of time, a fixed budget or cost, and a specific set of deliverables or scope that must be met. Changing any one of these factors will affect the other two. For example, if the scope of a project is increased, then either the cost or the time required to complete the project will have to increase as well. Similarly, if the time available for a project is reduced, then either the scope or the cost will have to be reduced as well.
 
-[![iron-triangle](/journal/journal-assets/W0-1.png)](https://www.youtube.com/live/SG8blanhAOg?feature=share)
+[![iron-triangle](journal-assets/W0-1a.png)](https://www.youtube.com/live/SG8blanhAOg?feature=share)
 
 - **TOGAF** - We need TOGAF or similar enterprise architecture frameworks to provide a structured and organized approach to managing the complexity of large IT systems and to align them with the organization's business goals. By using a standardized approach, it becomes easier to communicate and collaborate between different teams and departments.(Didn't look more into as instruced by Chris, lol)
 
@@ -32,19 +32,19 @@ Few things i picked from livestream that i wanted to look into more:
 <br>
 
 - Recreate Conceptual Diagram in Lucid Charts or on a Napkin
-  ![Napkin diagram](/journal/journal-assets/W0-2.jpg)
+  ![Napkin diagram](journal-assets/W0-2a.jpg)
 
 - **Recreate Logical Architectual Diagram in Lucid Charts**
-  ![Logical Architectual Diagram](/journal/journal-assets/W0-3.png)
+  ![Logical Architectual Diagram](journal-assets/W0-3a.png)
   [Lucid chart link](https://lucid.app/lucidchart/59e7df73-0879-4b64-9694-bfe3e89effed/edit?viewport_loc=-298%2C-228%2C3328%2C1642%2C0_0&invitationId=inv_dbc91856-3cb0-43e3-b7cc-e811ec27b9c1)
 
 - I followed the week 0 instruction and was able to succesfully do the setup. For journal i am using vscode, as it is easier to see the changes i make simultaneously and do one final push once i am satisfied with the work. I have a clone of repo in my local system.
-  ![Vs-code proof](/journal/journal-assets/W0-4.png)
+  ![Vs-code proof](journal-assets/W0-4a.png)
 
 - Few proof of work i would like to show - Destroyed my root account credentail and everything is done admin IAM user
 
 - **Budget**
-  ![Vs-code proof](/journal/journal-assets/W0-6.png)
+  ![Vs-code proof](journal-assets/W0-6a.png)
 
 - **Biling alarm**
   <br />
