@@ -50,6 +50,8 @@ Few things i picked from livestream that i wanted to look into more:
   <br />
   So I ran into my first issue when i checked SNS to take screenshot i saw there was nothing there the notification that i created was gone. I thought maybe it was accidentally created into my root account so i cross-checked but that wasn't the case.Turns out i made AWS send me couple of notification conformation mails because it landed in spam folder and i didn't click on the right link for conformation and sns deletes the topic after three days of pending conformation.
   I performed this step again to create an alarm.
+  ![W0-5](https://user-images.githubusercontent.com/123767474/219381037-bea40cf9-e41d-4bef-ae98-9d8330091ff4.png)
+
 
 </details>
 
