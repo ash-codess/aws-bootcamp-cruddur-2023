@@ -1,6 +1,7 @@
 
 
 <img width="1584" alt="W0-B" src="https://user-images.githubusercontent.com/123767474/219365375-7a054844-6812-4ef6-ae0d-2657faf25691.png">
+
 # Week 0 — Billing and Architecture
 
 
@@ -17,8 +18,8 @@ The instructors were not only incredibly knowledgeable, but also really nice, wh
 Few things i picked from livestream that i wanted to look into more:
 
 - **Iron triangle** - The basic idea is that any project has a fixed amount of time, a fixed budget or cost, and a specific set of deliverables or scope that must be met. Changing any one of these factors will affect the other two. For example, if the scope of a project is increased, then either the cost or the time required to complete the project will have to increase as well. Similarly, if the time available for a project is reduced, then either the scope or the cost will have to be reduced as well.
-
-[![iron-triangle](journal-assets/W0-1a.png)](https://www.youtube.com/live/SG8blanhAOg?feature=share)
+  
+  ![iron-triangle](https://user-images.githubusercontent.com/123767474/219365702-a4a7dcde-e648-43e9-9204-062102a56336.png)
 
 - **TOGAF** - We need TOGAF or similar enterprise architecture frameworks to provide a structured and organized approach to managing the complexity of large IT systems and to align them with the organization's business goals. By using a standardized approach, it becomes easier to communicate and collaborate between different teams and departments.(Didn't look more into as instruced by Chris, lol)
 
@@ -34,19 +35,21 @@ Few things i picked from livestream that i wanted to look into more:
 <br>
 
 - Recreate Conceptual Diagram in Lucid Charts or on a Napkin
-  ![Napkin diagram](journal-assets/W0-2a.jpg)
-
+  ![Napkin diagram](https://user-images.githubusercontent.com/123767474/219365837-cecf0682-f289-44f8-b2a7-eefafa144fcb.jpg)
+  
 - **Recreate Logical Architectual Diagram in Lucid Charts**
-  ![Logical Architectual Diagram](journal-assets/W0-3a.png)
+  ![Logical Architectual Diagram](https://user-images.githubusercontent.com/123767474/219365946-6a36f12d-b992-42d9-a1fc-40816325cba5.png)
   [Lucid chart link](https://lucid.app/lucidchart/59e7df73-0879-4b64-9694-bfe3e89effed/edit?viewport_loc=-298%2C-228%2C3328%2C1642%2C0_0&invitationId=inv_dbc91856-3cb0-43e3-b7cc-e811ec27b9c1)
 
 - I followed the week 0 instruction and was able to succesfully do the setup. For journal i am using vscode, as it is easier to see the changes i make simultaneously and do one final push once i am satisfied with the work. I have a clone of repo in my local system.
-  ![Vs-code proof](journal-assets/W0-4a.png)
+  ![Vs-code proof](https://user-images.githubusercontent.com/123767474/219366049-9e776535-fc10-4043-8a96-b373f841fc4d.png)
+ 
 
 - Few proof of work i would like to show - Destroyed my root account credentail and everything is done admin IAM user
 
 - **Budget**
-  ![Vs-code proof](journal-assets/W0-6a.png)
+  
+  ![Vs-code proof](https://user-images.githubusercontent.com/123767474/219366154-e17f1733-bc63-43c4-bf77-44508b7a4680.png)
 
 - **Biling alarm**
   <br />
