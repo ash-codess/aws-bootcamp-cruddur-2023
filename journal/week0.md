@@ -1,6 +1,8 @@
-[![banner](journal-assets/W0-B.png)](https://www.youtube.com/live/SG8blanhAOg?feature=share)
 
+
+<img width="1584" alt="W0-B" src="https://user-images.githubusercontent.com/123767474/219365375-7a054844-6812-4ef6-ae0d-2657faf25691.png">
 # Week 0 — Billing and Architecture
+
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/ash-codess/aws-bootcamp-cruddur-2023)
 
