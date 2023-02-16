@@ -34,10 +34,12 @@ Few things i picked from livestream that i wanted to look into more:
 <summary>Required Homework</summary>
 <br>
 
-- Recreate Conceptual Diagram in Lucid Charts or on a Napkin
+- **Recreate Conceptual Diagram in Lucid Charts or on a Napkin**
+  <br />
   ![Napkin diagram](https://user-images.githubusercontent.com/123767474/219365837-cecf0682-f289-44f8-b2a7-eefafa144fcb.jpg)
   
 - **Recreate Logical Architectual Diagram in Lucid Charts**
+  <br />
   ![Logical Architectual Diagram](https://user-images.githubusercontent.com/123767474/219365946-6a36f12d-b992-42d9-a1fc-40816325cba5.png)
   [Lucid chart link](https://lucid.app/lucidchart/59e7df73-0879-4b64-9694-bfe3e89effed/edit?viewport_loc=-298%2C-228%2C3328%2C1642%2C0_0&invitationId=inv_dbc91856-3cb0-43e3-b7cc-e811ec27b9c1)
 
@@ -54,7 +56,9 @@ Few things i picked from livestream that i wanted to look into more:
 - **Biling alarm**
   <br />
   So I ran into my first issue when i checked SNS to take screenshot i saw there was nothing there the notification that i created was gone. I thought maybe it was accidentally created into my root account so i cross-checked but that wasn't the case.Turns out i made AWS send me couple of notifciation conformaiton mails because it landed in spam folder and i didn;t click on the right link for conformation and sns delets the topic after three days of pending conformation.
+  ![Billing alalrm](https://user-images.githubusercontent.com/123767474/219378406-d8b6c30d-827c-4bcc-929e-c4ea1bb0deb1.png)
 
+  
 </details>
 
 ---
