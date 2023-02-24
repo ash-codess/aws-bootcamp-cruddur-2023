@@ -10,7 +10,7 @@
 <summary>
 Youtube live takeaway
 </summary>
-This week we started with docker. As a beginner it was overwhelming amount of information but now i knew what needs to be done and i decided t give first two days to understand more about docker.
+This week we started with docker. As a beginner it was overwhelming amount of information but now i knew what needs to be done and i decided to give first two days to understand more about docker.
 
 <img width="842" alt="w1_1" src="https://user-images.githubusercontent.com/123767474/220917137-05b13a1c-80bb-4180-ae21-f076d4aa0d41.png">
 
