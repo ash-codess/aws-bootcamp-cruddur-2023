@@ -12,8 +12,7 @@ Youtube live takeaway
 </summary>
 This week we started with docker. As a beginner it was overwhelming amount of information but now i knew what needs to be done and i decided to give first two days to understand more about docker.
 
-<img width="842" alt="w1_1" src="https://user-images.githubusercontent.com/123767474/220917137-05b13a1c-80bb-4180-ae21-f076d4aa0d41.png">
-
+<img width="582" alt="docker-arch" src="https://user-images.githubusercontent.com/123767474/221354749-c4ca3cef-19d9-4c5f-94d1-0c50327478c5.png">
 
 I started with the free docker for beginners course by Kodekloud. The first few section of the course was enough to understand the basics of docker. I documented what i learned in my personal blog
 [Link](https://ash-codes.tech/posts/docker-101/).<br>
