@@ -439,7 +439,25 @@ When i felt comfortable enough to understand what was going on, I proceeded with
 
 <details>
 <summary>Extended homework</summary>
-        pending work
+        For this week's homework challenge, I performed the health check on docker-compose file. I followed a simple guide i found online and implemented it.
+
+   ![w1_ext](https://user-images.githubusercontent.com/123767474/221367466-66a75acd-5b21-4edd-9fb1-c9a9122f6e48.png)
+
+- Here's what each of the attributes mean:
+
+  - test: This specifies the command to run to check the health of the container. In this example, the command is curl --fail -s http://localhost:4567 || exit 1, which tries to fetch the URL http://localhost:4567 using curl and exits with a non-zero status code if the URL is not reachable. This means that if the test command fails (i.e., exits with a non-zero status code), the container will be considered unhealthy.
+
+  - interval: This specifies the interval between health checks. In this example, the interval is set to 30s, which means that the health check will be run every 30 seconds.
+
+  - timeout: This specifies the maximum amount of time to wait for the test command to complete before considering it a failure. In this example, the timeout is set to 30s, which means that if the test command takes longer than 30 seconds to complete, the container will be considered unhealthy.
+
+  - retries: This specifies the number of times to retry running the test command before considering the container unhealthy. In this case, the retries are set to 3, which means that if the test command fails three times in a row, the container will be considered unhealthy.
+
+- By using a health check configuration like this in your Docker Compose or Docker Swarm file, you can ensure that your containerized application or service is always running and healthy, and that any issues are detected and resolved quickly.
+
+- Next challenge I attempted was to learn how to install Docker on your local machine and get the same containers running outside of Gitpod. This was smooth and i was able to run my containers from my local machine in localhost but the docker compose up took near about 30 minutes to complete, so for now i have decided i have decided not to use my local with my 4gigs ram but i will be using it for testing and doing homework challenges without worrying about running out of gitpod credits.
+
+- Next i wanted to try multi-build, eventhough i somewhat understood how it is done but i couldn't figure out how to implement in our project. Due to time constraint i have decided to implement at a later stage.
 </details>
 
 ---
