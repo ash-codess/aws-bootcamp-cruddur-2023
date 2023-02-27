@@ -440,7 +440,13 @@ When i felt comfortable enough to understand what was going on, I proceeded with
 <details>
 <summary>Extended homework</summary>
         For this week's homework challenge, I performed the health check on docker-compose file. I followed a simple guide i found online and implemented it.
-
+ ```sh
+    healthcheck:
+      test: curl --fail -s http://localhost:4567 || exit 1
+      interval: 30s
+      timeout: 30s
+      retries: 3
+ ```
    ![w1_ext](https://user-images.githubusercontent.com/123767474/221367466-66a75acd-5b21-4edd-9fb1-c9a9122f6e48.png)
 
 - Here's what each of the attributes mean:
