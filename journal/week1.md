@@ -440,13 +440,16 @@ When i felt comfortable enough to understand what was going on, I proceeded with
 <details>
 <summary>Extended homework</summary>
         For this week's homework challenge, I performed the health check on docker-compose file. I followed a simple guide i found online and implemented it.
- ```sh
-    healthcheck:
-      test: curl --fail -s http://localhost:4567 || exit 1
-      interval: 30s
-      timeout: 30s
-      retries: 3
- ```
+ 
+   ```sh
+      healthcheck:
+         test: curl --fail -s http://localhost:4567 || exit 1
+         interval: 30s
+         timeout: 30s
+         retries: 3
+   ```
+   
+   
    ![w1_ext](https://user-images.githubusercontent.com/123767474/221367466-66a75acd-5b21-4edd-9fb1-c9a9122f6e48.png)
 
 - Here's what each of the attributes mean:
@@ -459,7 +462,7 @@ When i felt comfortable enough to understand what was going on, I proceeded with
 
   - retries: This specifies the number of times to retry running the test command before considering the container unhealthy. In this case, the retries are set to 3, which means that if the test command fails three times in a row, the container will be considered unhealthy.
 
-- By using a health check configuration like this in your Docker Compose or Docker Swarm file, you can ensure that your containerized application or service is always running and healthy, and that any issues are detected and resolved quickly.
+- By using a health check configuration like this in  Docker Compose file, we can ensure that our containerized application or service is always running and healthy, and that any issues are detected and resolved quickly.
 
 - Next challenge I attempted was to learn how to install Docker on your local machine and get the same containers running outside of Gitpod. This was smooth and i was able to run my containers from my local machine in localhost but the docker compose up took near about 30 minutes to complete, so for now i have decided i have decided not to use my local with my 4gigs ram but i will be using it for testing and doing homework challenges without worrying about running out of gitpod credits.
 
