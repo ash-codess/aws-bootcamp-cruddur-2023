@@ -10,15 +10,25 @@
 Youtube live takeaway
 </summary>
 - This week we started of with distributed tracing. During live we instrumented our backend-flask with honeycomb which we will bw using for observability in coming weeks as we add more services and functionality.
+   
+- Monitoring Vs Observability: <br> 
+    - Monitoring refers to the process of collecting data from various sources (such as logs, metrics, and traces) to understand the current state of a system and detect problems or anomalies. Monitoring typically involves setting up thresholds, alerts, and dashboards to visualize the data and identify issues that require attention.
+    
+    - Observability, on the other hand, is a more holistic approach to understanding a system's behavior and performance. Observability involves designing a system so that its internal state and external behavior can be inferred from its outputs. Observability tools typically provide insights into the system's internal workings, including its dependencies, performance bottlenecks, and error conditions, to help operators and developers quickly diagnose and troubleshoot issues.
 
 - Few important terminology:<br>
-    - Observability: THe ability to observe what's happening inside our software/application.
     - Telemetry: Data that the software emits to tell it's team what's going on inside.
     - Instrumentation: Code that emits telemetry.
         - auto-instrumentation: Code we didn't write, that emits telemetry.
     - Open-telemetry: Initialization of code to generate telemetry.
 
         <img width="592" alt="honeycomb" src="https://user-images.githubusercontent.com/123767474/222814200-bc85ceed-d7c9-45ae-989a-90b398199677.png">
+    
+- Tools we will be using this week:
+    - `Honeycomb`: Honeycomb.io is a cloud-based observability platform that provides developers and operators with deep insights into their systems and applications. The platform enables teams to collect, analyze, and visualize high-dimensional data in real-time, making it easier to diagnose and troubleshoot issues, and improve the overall performance of their applications.<br/>
+    - `AWS X-Ray`: It is a distributed tracing system that enables developers to analyze and debug applications running on AWS. It allows you to track requests as they flow through your application, identifying performance bottlenecks and errors in real-time.  The system provides detailed information about each request, including request origin, timings, service calls, and exceptions.
+    - `Amazon CloudWatch Logs`: It is a log management service provided by AWS. It allows you to monitor, store, and access log files from your applications, operating systems, and other AWS services. CloudWatch Logs can be used to monitor logs in real-time, set alarms on specific log events, and analyze log data using CloudWatch Insights.
+    - `Rollbar`: It is a powerful tool for monitoring errors and exceptions in our applications. It provides a centralized view of errors across your application stack, streamlines your development workflow, and helps you identify and fix issues quickly.
 </details> 
 
 ---
