@@ -28,10 +28,10 @@ services:
   frontend-react-js:
     environment:
       REACT_APP_BACKEND_URL: "https://4567-${GITPOD_WORKSPACE_ID}.${GITPOD_WORKSPACE_CLUSTER_HOST}"
-      REACT_AWS_PROJECT_REGION: "${AWS_DEFAULT_REGION}"    
-      REACT_APP_AWS_COGNITO_REGION: "${AWS_DEFAULT_REGION}" 
-      REACT_APP_AWS_USER_POOLS_ID: "us-east-1_ZOkiMc3YX"
-      REACT_APP_CLIENT_ID: "105bgk1vk6416d2tr0bpkjetve"
+      REACT_APP_AWS_PROJECT_REGION: "${AWS_DEFAULT_REGION}"
+      REACT_APP_AWS_COGNITO_REGION: "${AWS_DEFAULT_REGION}"
+      REACT_APP_AWS_USER_POOLS_ID: "us-east-1_J4H4C0j5F"
+      REACT_APP_CLIENT_ID: "52kl7j4ejc5rsumkkss3sb0g6p"
     build: ./frontend-react-js
     healthcheck:
       test: curl --fail -s http://localhost:3000 || exit 1
