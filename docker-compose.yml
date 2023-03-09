@@ -14,8 +14,8 @@ services:
       AWS_ACCESS_KEY_ID: "${AWS_ACCESS_KEY_ID}"
       AWS_SECRET_ACCESS_KEY: "${AWS_SECRET_ACCESS_KEY}"
       ROLLBAR_ACCESS_TOKEN: "${ROLLBAR_ACCESS_TOKEN}"
-      AWS_COGNITO_USER_POOL_ID: "us-east-1_J4H4C0j5F"
-      AWS_COGNITO_USER_POOL_CLIENT_ID: "52kl7j4ejc5rsumkkss3sb0g6p"
+      AWS_COGNITO_USER_POOL_ID: "us-east-1_FRUwQ9XYn"
+      AWS_COGNITO_USER_POOL_CLIENT_ID: "1gai875mrjvt038rb02s7copjd"
     build: ./backend-flask
     healthcheck:
       test: curl --fail -s http://localhost:4567 || exit 1
