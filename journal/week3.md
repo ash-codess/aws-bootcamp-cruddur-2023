@@ -17,36 +17,34 @@
 
 <details>
 <summary>Required homework</summary>
+1.  Create a new user pool in Amazon cognito:
 
-#### 1.  Create a new user pool in Amazon cognito:
-    <br>
+- Configure sign-in experience:
+  - Provider types: Cognito user pool.
+  - Cognito user pool sign-in options: Email.
+- Configure security requirements:
+  - Password policy mode: cruddur-user-poo
+  - MFA enforcement: No MFA.
+  - Self-service account recovery: Self-service account recovery.
+  - Delivery method for user account recovery messages: Email only.
+- Configure sign-up experience:
+  - Self-registration: Enable Self-registration
+  - Cognito-assisted verification and confirmation: Enable it.
+  - Attributes to verify: Send email message, verify email address.
+  - Keep original attribute value active when an update is pending : Enabled
+  - Additional required attributes: name, preferred_username
+- Configure message delivery:
+  - Email provider: Send email with Cognito
+- Integrate your app:
 
-    - Configure sign-in experience:
-      - Provider types: Cognito user pool.
-      - Cognito user pool sign-in options: Email.
-    - Configure security requirements:
-      - Password policy mode: cruddur-user-poo
-      - MFA enforcement: No MFA.
-      - Self-service account recovery: Self-service account recovery.
-      - Delivery method for user account recovery messages: Email only.
-    - Configure sign-up experience:
-      - Self-registration: Enable Self-registration
-      - Cognito-assisted verification and confirmation: Enable it.
-      - Attributes to verify: Send email message, verify email address.
-      - Keep original attribute value active when an update is pending : Enabled
-      - Additional required attributes: name, preferred_username
-    - Configure message delivery:
-      - Email provider: Send email with Cognito
-    - Integrate your app:
+  - User pool name: cruddur-userpool
+  - App type: Public client
+  - App client name: cruddur
+  - Client secret: Don't generate a client secret. 
 
-      - User pool name: cruddur-userpool
-      - App type: Public client
-      - App client name: cruddur
-      - Client secret: Don't generate a client secret. <br>
+      Review and create!
 
-      Review and create!<br/>
-
-#### 2.  Setting up cognito: <br/>
+2.  Setting up cognito: <br/>
 
     - Install AWS amplify in `/frontend-react`:
       ```sh
@@ -64,7 +62,7 @@
       Auth: {
           // We are not using an Identity Pool
           // identityPoolId: process.env.REACT_APP_IDENTITY_POOL_ID, // REQUIRED - Amazon Cognito Identity Pool ID
-          region: process.env.REACT_APP_AWS_PROJECT_REGION,           // REQUIRED - Amazon Cognito Region
+          region: process.env.REACT_APP_AWS_PROJECT_REGION,           REQUIRED - Amazon Cognito Region
           userPoolId: process.env.REACT_APP_AWS_USER_POOLS_ID,         // OPTIONAL - Amazon Cognito User Pool ID
           userPoolWebClientId: process.env.REACT_APP_CLIENT_ID,   // OPTIONAL - Amazon Cognito Web Client ID (26-char alphanumeric string)
       }
@@ -125,7 +123,7 @@
       };
       ```
 
-#### 3.  Implementing Custom Signin Page:
+3.  Implementing Custom Signin Page:
 
     - Go to `src/pages/SigninPage.js`:
 
@@ -169,11 +167,11 @@
     aws cognito-idp admin-set-user-password --username spacecadet --password Test#1234 --user-pool-id [tbd] --permanent
     ```
 
-#### 4.  Implementing Custom Signup Page:
+4.  Implementing Custom Signup Page:
 
     - Go to `src/pages/SignupPage.js`:
 
-    ```js
+      ```js
       //TODO authentication
       //replace cookie with
       import { Auth } from "aws-amplify";
@@ -207,11 +205,11 @@
       };
       ```
 
-#### 5.  Implementing Custom Conformation Page:
+5.  Implementing Custom Conformation Page:
 
     - Go to `src/pages/ConformationPage.js`:
 
-    ```js
+      ```js
       //TODO authentication
       //replace cookie with
       import { Auth } from "aws-amplify";
@@ -250,38 +248,38 @@
         }
         return false;
       };
-    ```
+      ```
 
-#### 6.  Implementing Custom Recovery Page:
+6.  Implementing Custom Recovery Page:
 
     - Go to `src/pages/RecoveryPage.js`:
 
-    ```js
-    import { Auth } from "aws-amplify";
+      ```js
+      import { Auth } from "aws-amplify";
 
-    const onsubmit_send_code = async (event) => {
-      event.preventDefault();
-      setErrors("");
-      Auth.forgotPassword(username)
-        .then((data) => setFormState("confirm_code"))
-        .catch((err) => setErrors(err.message));
-      return false;
-    };
-    const onsubmit_confirm_code = async (event) => {
-      event.preventDefault();
-      setErrors("");
-      if (password == passwordAgain) {
-        Auth.forgotPasswordSubmit(username, code, password)
-          .then((data) => setFormState("success"))
+      const onsubmit_send_code = async (event) => {
+        event.preventDefault();
+        setErrors("");
+        Auth.forgotPassword(username)
+          .then((data) => setFormState("confirm_code"))
           .catch((err) => setErrors(err.message));
-      } else {
-        setCognitoErrors("Passwords do not match");
-      }
-      return false;
-    };
-    ```
+        return false;
+      };
+      const onsubmit_confirm_code = async (event) => {
+        event.preventDefault();
+        setErrors("");
+        if (password == passwordAgain) {
+          Auth.forgotPasswordSubmit(username, code, password)
+            .then((data) => setFormState("success"))
+            .catch((err) => setErrors(err.message));
+        } else {
+          setCognitoErrors("Passwords do not match");
+        }
+        return false;
+      };
+      ```
 
-#### 7.  Congito JWT Server side Verification:
+7.  Cognito JWT Server side Verification:
 
     - Go to `src/pages/HomeFeedPage.js`:
       ```js
@@ -503,7 +501,6 @@
       //} catch (error) {
       //console.log('error signing out: ', error);
       //}
- 
       ```
       After login we would see something like this: 
       ![week_3](https://user-images.githubusercontent.com/123767474/224489434-3dc023dd-4dd9-49a0-a09a-756ef93b7904.png)
