@@ -18,7 +18,7 @@
 <details>
 <summary>Required homework</summary>
 
-1.  Create a new user pool in Amazon cognito:
+#### 1.  Create a new user pool in Amazon cognito:
     <br>
 
     - Configure sign-in experience:
@@ -46,7 +46,7 @@
 
       Review and create!<br/>
 
-2.  Setting up cognito: <br/>
+#### 2.  Setting up cognito: <br/>
 
     - Install AWS amplify in `/frontend-react`:
       ```sh
@@ -125,7 +125,7 @@
       };
       ```
 
-3.  Implementing Custom Signin Page:
+#### 3.  Implementing Custom Signin Page:
 
     - Go to `src/pages/SigninPage.js`:
 
@@ -169,7 +169,7 @@
     aws cognito-idp admin-set-user-password --username spacecadet --password Test#1234 --user-pool-id [tbd] --permanent
     ```
 
-4.  Implementing Custom Signup Page:
+#### 4.  Implementing Custom Signup Page:
 
     - Go to `src/pages/SignupPage.js`:
 
@@ -207,7 +207,7 @@
       };
       ```
 
-5.  Implementing Custom Conformation Page:
+#### 5.  Implementing Custom Conformation Page:
 
     - Go to `src/pages/ConformationPage.js`:
 
@@ -252,7 +252,7 @@
       };
     ```
 
-6.  Implementing Custom Recovery Page:
+#### 6.  Implementing Custom Recovery Page:
 
     - Go to `src/pages/RecoveryPage.js`:
 
@@ -281,7 +281,7 @@
     };
     ```
 
-7.  Congito JWT Server side Verification:
+#### 7.  Congito JWT Server side Verification:
 
     - Go to `src/pages/HomeFeedPage.js`:
       ```js
